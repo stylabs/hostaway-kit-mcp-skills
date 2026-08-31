@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stylabs/hostaway-kit",
+  "title": "hostaway-kit",
+  "description": "Read-only Hostaway MCP for operators who keep Hostaway as their PMS. Listings, calendar, inbox triage, and reports. Runs on fixtures with no key. Shipped by STYLABS. Not an official Hostaway partner.",
+  "repository": {
+    "url": "https://github.com/stylabs/hostaway-kit-mcp-skills",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "hostaway-kit",
+      "version": "1.0.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "HOSTAWAY_ACCOUNT_ID",
+          "description": "Hostaway account id. Optional: omit both credentials to run fixtures.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        },
+        {
+          "name": "HOSTAWAY_CLIENT_SECRET",
+          "description": "Hostaway API client secret. Optional: omit both credentials to run fixtures.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
