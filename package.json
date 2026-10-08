@@ -1,6 +1,6 @@
 {
   "name": "hostaway-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "mcpName": "io.github.stylabs/hostaway-kit",
   "description": "Read-only Hostaway MCP server for listings, calendar, inbox triage, and operator reports. Runs on fixtures when credentials are unset.",
   "type": "module",
@@ -29,13 +29,16 @@
     "pms",
     "stylabs"
   ],
-  "author": "STYLABS",
+  "author": {
+    "name": "STYLABS",
+    "url": "https://www.stylabs.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stylabs/hostaway-kit-mcp-skills.git"
   },
-  "homepage": "https://github.com/stylabs/hostaway-kit-mcp-skills#readme",
+  "homepage": "https://www.stylabs.com/work/hostaway",
   "bugs": {
     "url": "https://github.com/stylabs/hostaway-kit-mcp-skills/issues"
   },
