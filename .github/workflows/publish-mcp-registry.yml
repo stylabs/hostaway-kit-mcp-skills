@@ -2,6 +2,14 @@ name: Publish server.json to MCP Registry
 
 on:
   workflow_dispatch:
+  # One-shot: merging the commit that adds this push trigger runs the job.
+  # workflow_dispatch is not available to this token (HTTP 403). The follow-up
+  # commit removes this push trigger; that commit's workflow file no longer
+  # matches, so it does not publish again.
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-mcp-registry.yml
 
 jobs:
   publish-registry:
